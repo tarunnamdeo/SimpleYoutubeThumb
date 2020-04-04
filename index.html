@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="icon"
+      type="image/png"
+      href="https://1.bp.blogspot.com/-_l33u3BTkOI/XnnvtJonQbI/AAAAAAAAAI0/iaCu3sVPw18OcOAWrx_wDcobRqovKf52gCLcBGAsYHQ/s1600/Youtube%2BDownload%2BImage_Thumb.png">
+
+<style>
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
+</style>
+<title>Youtube thumbnail Downloader</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+  function myFunction() {
+
+
+
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Youtube Link must be filled out");
+      return false;
+    }
+
+    // document.getElementById("videoid").value = "Johnny Bravo";
+   var idss=document.getElementById("videoid").value;
+   // document.write(idss);
+     var strArray = idss.split("https://www.youtube.com/watch?v=");
+     // Display array values on page
+     var iddd;
+        for(var i = 0; i < strArray.length; i++){
+            // document.write("<p>" + strArray[i] + "</p>");
+          iddd=strArray[i];
+        }
+           var linkkk="https://img.youtube.com/vi/";
+           var concc=linkkk.concat(iddd);
+          var finallinkk=concc.concat("/maxresdefault.jpg");
+          var sd=concc.concat("/sddefault.jpg");
+          var s480=concc.concat("/hqdefault.jpg");
+          var s360=concc.concat("/mqdefault.jpg");
+
+
+            // document.getElementById('out').innerHTML =finallinkk;
+       document.getElementById("myImg").src = finallinkk;
+       document.getElementById("myhref").href = finallinkk;
+
+       document.getElementById("myImg720").src = sd;
+       document.getElementById("myhref720").href = sd;
+
+       document.getElementById("myImg480").src = s480;
+       document.getElementById("myhref480").href = s480;
+
+       document.getElementById("myImg360").src = s360;
+       document.getElementById("myhref360").href = s360;
+
+       document.getElementById("myquick").src = s360;
+       document.getElementById("myhr").href = finallinkk;
+
+       var x = document.getElementById("myDIV");
+       if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         // x.style.display = "none";
+       }
+       // var x = document.getElementById("myDIV");
+       // x.style.display="none";
+       var y = document.getElementById("myDIV1");
+       if (y.style.display === "none") {
+         y.style.display = "block";
+       }
+
+       var z = document.getElementById("info");
+       // if (z.style.display === "none") {
+         z.style.display = "none";
+       // }
+
+
+
+  }
+
+
+
+  // function validateForm() {
+  //   var x = document.forms["myForm"]["fname"].value;
+  //   if (x == "") {
+  //     alert("Name must be filled out");
+  //     return false;
+  //   }else {
+  //   myFunction();
+  //   }
+  //
+  //
+  // }
+
+//   $(document).ready(function(){
+// $('.text_container').addClass("hidden");
+//
+// $('.text_container').click(function() {
+//  var $this = $(this);
+//
+//  if ($this.hasClass("hidden")) {
+//    $(this).removeClass("hidden").addClass("visible");
+//
+//  } else {
+//    $(this).removeClass("visible").addClass("hidden");
+//  }
+// });
+// });
+
+// $(document).ready(function(){
+// 		$('.text_container').click(function() {
+// 			$('.text_container').css("display", "none");
+//
+// 			$('.text_container').css("color", "red");
+// 		});
+// 	});
+
+
+// document.getElementById("myDIV").div.style.display = "none";
+
+
+    </script>
+
+
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+          <h1 class="py-5">Youtube thumbnail Downloader</h1>
+               <form name="myForm" onsubmit="return validateForm()" method="post">
+                 <input name="fname" type="text" id="videoid" class="form-control form-control-lg mb-4"
+               placeholder="Enter Link Eg: https://www.youtube.com/watch?v=tJGBVigwPlU"
+                 >
+<button type="button" onclick="myFunction()" class="btn btn-primary btn-lg btn-block">Submit</button>
+              </form>
+
+
+<div class="py-3" id="info">
+
+  <h2>How to download Youtube Thumbnail?</h2>
+<p>
+
+  Here On https://youtubethedownload.blogspot.com/ you can easily download four different dimensions(MQ 320x180, HQ 480x360, SD 640x480 and HD 1920x1080) thumbnails of youtube video with ease.
+
+  For Youtube thumnail download follow these three simple steps:
+
+<p>1.  Copy Video url.</p>
+<p>2.  Paste it in text field showing above and click search.</p>
+<p>3.  Download any quality which you want(recommended quality is HD) by clicking on download button.</p>
+
+</p>
+
+</div>
+
+
+
+
+
+              <!-- <h1 id="out"></h1> -->
+
+
+             <div id="myDIV" style="display:none;">
+
+              <h2 class="py-3">Max Resoultion 1080P</h2>
+              <a id="myhref" href="#" target="_blank">
+                <img id="myImg" src="#" class="img-fluid mb-3" alt="youtube thumbnail Downloader">
+              </a>
+
+              <h2 class="py-3">HD 720P</h2>
+              <a id="myhref720" href="#" target="_blank">
+                <img id="myImg720" src="#" class="img-fluid mb-3" alt="youtube thumbnail Downloader">
+              </a>
+
+              <h2 class="py-3">480P Size</h2>
+              <a id="myhref480" href="#" target="_blank">
+                <img id="myImg480" src="#" class="img-fluid mb-3" alt="youtube thumbnail Downloader">
+              </a>
+
+              <h2 class="py-3">360P Size</h2>
+              <a id="myhref360" href="#" target="_blank">
+                <img id="myImg360" src="#" class="img-fluid mb-3" alt="youtube thumbnail Downloader">
+              </a>
+
+           </div>
+<!-- onclick="window.open(this.src)" -->
+
+        </div>
+        <div class="col-md-3 text-center">
+        <h2 class="py-5">Quick View</h2>
+        <div id="myDIV1" style="display:none;">
+        <a id="myhr" href="#" target="_blank">
+         <img id="myquick" src="https://www.youtube.com/" class="img-fluid mb-3" alt="thumbnail Downloader" class="img-fluid">
+        </a>
+
+        </div>
+      </div>
+
+ </div>
+</div>
+  </main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
